@@ -1,0 +1,359 @@
+:root {
+    --color1: #05b1b1;
+    --color2: #52339a;
+}
+
+section {
+    padding: 100px 0;
+}
+
+footer, .carousel-btn, .btn_anim {
+    background: var(--color1);
+    background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+
+}
+
+header {
+    background-image: linear-gradient(rgba(5, 177, 177, 0.2), rgba(82, 51, 154, 0.2)), url('/project/img/header_img.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 400px 0;
+}
+
+.img-znak {
+    border-radius: 50%;
+}
+
+.gradient {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+}
+.gradient:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    background-image: linear-gradient(to left, #11de93, #0e7ad6);
+    opacity: 0.8;
+}
+
+.nav_col {
+    color: var(--color1);
+    font-family: "Baskerville", sans-serif;
+    font-size: 2.0em
+}
+
+
+.nav_tel {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title-block {
+    position: relative;
+}
+
+.title-block_text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+/*.title-block_btn {*/
+/*    position: absolute;*/
+/*    bottom: -284px;*/
+/*    left: 40px;*/
+/*    background-color: var(--color1);*/
+/*}*/
+
+.title-block_text {
+    font-family: "Baskerville", sans-serif;
+    font-size: 41px;
+    color: white;
+}
+
+.itd_play {
+    background-color: var(--color1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 30px auto 30px;
+    transition: all 0.2s ease;
+}
+
+.itd_play:hover {
+    background-color: var(--color2);
+}
+
+/*.itd_triangle {*/
+/*    margin-right: -3px;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-style: solid;*/
+/*    border-width: 10px 0 10px 20px;*/
+/*    border-color: transparent transparent transparent var(--bs-white);*/
+/*}*/
+
+.btn_anim {
+    opacity: 0;
+    position: fixed;
+    left: 82%;
+    bottom: -1%;
+    box-shadow: 0 0 10px 0 var(--color1);
+    -webkit-animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1);
+}
+
+.btn_anim:hover {
+    -webkit-animation: none
+}
+
+@-webkit-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 23px rgba(81, 147, 218, 0), inset 0 1px 0 #9ec3e6
+    }
+
+}
+
+.element-show-btn {
+
+}
+
+.element-anim-btn.btn_anim {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+
+.title-2 {
+    font-family: "Baskerville", sans-serif;
+}
+
+.btn-itd {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 8px 30px;
+    font-size: 14px;
+    color: var(--bs-white);
+    background-color: var(--color2);
+}
+
+.title-block_btn {
+    position: absolute;
+    bottom: -306px;
+    left: 40px;
+
+}
+
+.title-block_btn-light {
+    background-color: var(--color1);
+    margin-bottom: 7px;
+}
+
+.title-block_text-comment {
+    font-size: 12px;
+    color: white;
+}
+
+.btn-itd:hover {
+    color: var(--bs-white);
+    background-color: var(--color1);
+}
+
+/*Почему мы*/
+.about, .schedule, .lawyer, .form_val {
+    background-color: #eee;
+}
+
+.about i {
+    font-size: 25px;
+    color: var(--color2);
+}
+
+.itd_circle {
+    margin: 0 auto 15px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--color2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: var(--color1);
+    margin: 15px auto 30px;
+}
+
+.forwhom h5 {
+    padding: 50px;
+    border: 3px solid var(--color1);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-black);
+    background-color: var(--bs-white);
+}
+
+.learning h5 {
+    padding: 25px;
+    border: 3px solid var(--color1);
+}
+
+.lawyer {
+    padding-bottom: 0;
+}
+
+.bi-1 {
+    color: var(--color2);
+}
+
+.bi-2 {
+    transform: rotate(180deg);
+}
+
+.lawyer-bio{
+    padding-bottom: 30px;
+}
+
+.lawyer-title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lawyer-block-quote {
+    display: flex;
+    justify-content: right;
+}
+
+.bi-2{
+
+}
+
+.itd_img {
+    max-width: 260px;
+}
+
+/*цвет*/
+.color1 {
+    color: var(--color1);
+}
+
+.color2 {
+    color: var(--color2);
+}
+
+.bg1 {
+    color: var(--color1);
+}
+
+.bg2 {
+    color: var(--color2);
+}
+
+footer {
+    padding: 30px 0;
+
+}
+
+.col-w {
+    width: 50.33333333%;
+}
+
+.block_title {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.block_title span, .block_title h1, .block_title h2 {
+    display: block;
+    position: relative;
+    font-family: "Baskerville", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 40px;
+    color: #393939;
+}
+
+.block_title span::before, .block_title h1::before, .block_title h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(50% - 160px);
+    bottom: 20px;
+    width: 100%;
+    max-width: 320px;
+    height: 1px;
+    background: var(--color1);
+    z-index: 1;
+}
+
+.block_title span::after, .block_title h1::after, .block_title h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: 17px;
+    width: 100%;
+    max-width: 50px;
+    height: 4px;
+    background: var(--color2);
+    z-index: 1;
+}
+
+.block_title p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #393939;
+}
+
+.col-font {
+    font-size: 13px;
+}
+
+.carousel-my {
+    padding-top: 0;
+}
+
+.carousel-btn {
+    /*background: var(--color2);*/
+}
+
+.carousel-lines {
+    margin-right: 0;
+    margin-left: 33%;
+}
+
+.carousel-text {
+    margin-left: 35%;
+    color: black;
+}
