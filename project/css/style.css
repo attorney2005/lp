@@ -27,6 +27,15 @@ header {
     padding: 400px 0;
 }
 
+.row-my {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row-my_forwhom-btn {
+    margin-top: 40px;
+}
+
 .img-znak {
     border-radius: 50%;
 }
@@ -35,19 +44,35 @@ header {
     display: inline-block;
     position: relative;
     line-height: 0;
+
 }
+
 .gradient:after {
     content: "";
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 273px;
+    height: 200px;
     position: absolute;
-    top: 0;
-    left: 0;
-    background: transparent;
-    background-image: linear-gradient(to left, #11de93, #0e7ad6);
-    opacity: 0.8;
+    top: -2px;
+    left: 6px;
+    background: transparent linear-gradient(to left, var(--color1), var(--color2));
+    opacity: 0.2;
+    border-radius: 50%;
 }
+
+@media (max-width: 1200px) {
+    .gradient:after {
+        left: 226px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gradient:after {
+        left: 52px;
+    }
+}
+
+
 
 .nav_col {
     color: var(--color1);
@@ -67,16 +92,10 @@ header {
 
 .title-block_text {
     position: absolute;
-    top: 40px;
+    line-height: 1;
+    top: 79px;
     left: 40px;
 }
-
-/*.title-block_btn {*/
-/*    position: absolute;*/
-/*    bottom: -284px;*/
-/*    left: 40px;*/
-/*    background-color: var(--color1);*/
-/*}*/
 
 .title-block_text {
     font-family: "Baskerville", sans-serif;
@@ -101,15 +120,6 @@ header {
     background-color: var(--color2);
 }
 
-/*.itd_triangle {*/
-/*    margin-right: -3px;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-style: solid;*/
-/*    border-width: 10px 0 10px 20px;*/
-/*    border-color: transparent transparent transparent var(--bs-white);*/
-/*}*/
-
 .btn_anim {
     opacity: 0;
     position: fixed;
@@ -121,6 +131,25 @@ header {
 
 .btn_anim:hover {
     -webkit-animation: none
+}
+
+.btn-itd {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 8px 30px;
+    font-size: 14px;
+    color: var(--bs-white);
+    background-color: var(--color2);
+}
+
+.btn-itd:hover {
+    color: var(--bs-white);
+    background-color: var(--color1);
+}
+
+.btn-my-form {
+    background-color: var(--color2);
 }
 
 @-webkit-keyframes pulse {
@@ -144,16 +173,6 @@ header {
     font-family: "Baskerville", sans-serif;
 }
 
-.btn-itd {
-    display: block;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 8px 30px;
-    font-size: 14px;
-    color: var(--bs-white);
-    background-color: var(--color2);
-}
-
 .title-block_btn {
     position: absolute;
     bottom: -306px;
@@ -166,14 +185,14 @@ header {
     margin-bottom: 7px;
 }
 
+.title-block_btn-light:hover {
+    color: var(--bs-white);
+    background-color: var(--color2);
+}
+
 .title-block_text-comment {
     font-size: 12px;
     color: white;
-}
-
-.btn-itd:hover {
-    color: var(--bs-white);
-    background-color: var(--color1);
 }
 
 /*Почему мы*/
@@ -232,7 +251,7 @@ header {
     transform: rotate(180deg);
 }
 
-.lawyer-bio{
+.lawyer-bio {
     padding-bottom: 30px;
 }
 
@@ -246,7 +265,7 @@ header {
     justify-content: right;
 }
 
-.bi-2{
+.bi-2 {
 
 }
 
@@ -357,3 +376,12 @@ footer {
     margin-left: 35%;
     color: black;
 }
+
+.footer-info {
+    color: white;
+}
+
+.modal-my {
+    background: var(--color1);
+}
+
