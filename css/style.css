@@ -17,7 +17,7 @@ footer, .carousel-btn, .btn_anim {
 }
 
 header {
-    background-image: linear-gradient(rgba(5, 177, 177, 0.2), rgba(82, 51, 154, 0.2)), url('/project/img/header_img.jpg');
+    background-image: linear-gradient(rgba(5, 177, 177, 0.2), rgba(82, 51, 154, 0.2)), url('/img/header_img.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     /*background-attachment: fixed;*/
