@@ -567,10 +567,10 @@
             <span>онлайн-консультация</span>
             <p>Требуется помощь специалиста? <br>Оценим перспективу дела бесплатно!</p>
         </div>
-        <form class="row row-my g-3 needs-validation justify-content-center" novalidate>
+        <form id="lead-form" class="row row-my g-3 needs-validation justify-content-center" novalidate>
             <div class="col-md-3">
                 <label for="validationCustom01" class="form-label"></label>
-                <input type="text" class="form-control" placeholder="Ваше имя" id="validationCustom01" value=""
+                <input type="text" name="leadName" class="form-control" placeholder="Ваше имя" id="validationCustom01" value=""
                        required>
                 <div class="valid-feedback">
                     Все хорошо!
@@ -578,7 +578,7 @@
             </div>
             <div class="col-md-3">
                 <label for="validationCustom02" class="form-label"></label>
-                <input type="text" class="form-control" placeholder="Ваш телефон" id="validationCustom02" required>
+                <input type="text" name="leadPhone" class="form-control" placeholder="Ваш телефон" id="validationCustom02" required>
             </div>
             <div class="col-7 col-w">
                 <div class="form-check form-check_in">
@@ -592,7 +592,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <button class="btn btn-itd" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
+                <button class="btn btn-itd" data-bs-toggle="modal" data-bs-target="#exampleModal" id="lead-form-submit-button">Заказать звонок</button>
             </div>
         </form>
     </div>
