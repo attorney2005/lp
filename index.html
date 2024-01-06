@@ -567,11 +567,10 @@
             <span>онлайн-консультация</span>
             <p>Требуется помощь специалиста? <br>Оценим перспективу дела бесплатно!</p>
         </div>
-        <form id="lead-form" class="row row-my g-3 needs-validation justify-content-center" novalidate>
+        <form id="lead-form" class="row row-my g-3 justify-content-center">
             <div class="col-md-3">
                 <label for="validationCustom01" class="form-label"></label>
-                <input type="text" name="leadName" class="form-control" placeholder="Ваше имя" id="validationCustom01" value=""
-                       required>
+                <input type="text" name="leadName" class="form-control" placeholder="Ваше имя" id="validationCustom01" value="" required>
                 <div class="valid-feedback">
                     Все хорошо!
                 </div>
@@ -592,7 +591,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <button class="btn btn-itd" data-bs-toggle="modal" data-bs-target="#exampleModal" id="lead-form-submit-button">Заказать звонок</button>
+                <button class="btn btn-itd" id="lead-form-submit-button">Заказать звонок</button>
             </div>
         </form>
     </div>
@@ -631,30 +630,30 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form id="lead-form-popup">
                     <div class="form-row align-items-center">
                         <div class="col-auto">
                             <label class="sr-only" for="inlineFormInput">Имя</label>
-                            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="">
+                            <input name="leadName" type="text" class="form-control mb-2" id="inlineFormInput" placeholder="" required>
                         </div>
                         <div class="col-auto">
                             <label class="sr-only" for="inlineFormInputGroup">Телефон</label>
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
                                 </div>
-                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                                <input name="leadPhone" type="text" class="form-control" id="inlineFormInputGroup" placeholder="" required>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                <input class="form-check-input" type="checkbox" id="autoSizingCheck" checked>
                                 <label class="form-check-label" for="autoSizingCheck">
                                     Я даю согласие на обработку персональных данных
                                 </label>
                             </div>
                         </div>
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-2 btn-my-form">Жду звонка</button>
+                            <button type="submit" data-dismiss="modal" class="btn btn-primary mb-2 btn-my-form" id="lead-form-popup-submit-button">Жду звонка</button>
                         </div>
                     </div>
                 </form>
@@ -665,6 +664,7 @@
 
 <script src="js/index.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
+
+

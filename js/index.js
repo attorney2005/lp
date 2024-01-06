@@ -13,24 +13,32 @@ for (let elm of elements) {
   observer.observe(elm);
 }
 
-// данные для отправки
-const leadForm = document.getElementById("lead-form");
-const leadFormSubmitButton = document.getElementById("lead-form-submit-button");
-leadFormSubmitButton.addEventListener("click", async (e) => {
-  e.preventDefault();
-  // данные для отправки
-  const leadName = leadForm.leadName.value;
-  const leadPhone = leadForm.leadPhone.value;
+function createLeadForm(formId, buttonId) {
+  const form = document.getElementById(formId);
+  const submitButton = document.getElementById(buttonId);
 
-  const response = await fetch("http://localhost:3000/lead", {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({
-      name: leadName,
-      phone: leadPhone
-    })
+  submitButton.addEventListener("click", async (e) => {
+    e.preventDefault();
+    // данные для отправки
+    const leadName = form.leadName.value;
+    const leadPhone = form.leadPhone.value;
+
+    const response = await fetch("http://localhost:3000/lead", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        name: leadName,
+        phone: leadPhone
+      })
+    });
+
+    if (response.status !== 202) {
+      console.error("Server error")
+    }
+
+    window.location = "/Landing-family-law/thanks.html";
   });
-  if (response.status !== 202) {
-    console.error("Server error")
-  }
-});
+}
+
+createLeadForm("lead-form", "lead-form-submit-button");
+createLeadForm("lead-form-popup", "lead-form-popup-submit-button");
