@@ -13,6 +13,17 @@ for (let elm of elements) {
   observer.observe(elm);
 }
 
+// const validationName = document.getElementsByTagName('input')
+//
+// validationName.addEventListener('invalid', () => {
+//       if (validationName.validity.valueMissing) {
+//         validationName.setCustomValidity('Обязательное поле')
+//       } else {
+//         validationName.setCustomValidity('');
+//       }
+//     }
+// )
+
 function createLeadForm(formId, buttonId) {
   const form = document.getElementById(formId);
   const submitButton = document.getElementById(buttonId);
