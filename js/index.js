@@ -47,7 +47,7 @@ function createLeadForm(formId, buttonId) {
       console.error("Server error")
     }
 
-    window.location = "thanks.html";
+    window.location = "/Landing-family-law/thanks.html";
   });
 }
 
