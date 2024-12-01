@@ -34,7 +34,7 @@ function createLeadForm(formId, buttonId) {
     const leadName = form.leadName.value;
     const leadPhone = form.leadPhone.value;
 
-    const response = await fetch("http://localhost:3000/lead", {
+    const response = await fetch("http://localhost:63342/lead", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({
