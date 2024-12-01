@@ -16,6 +16,10 @@ footer, .carousel-btn, .btn_anim {
 
 }
 
+.dropdown-toggle::after {
+    color: red;
+}
+
 header {
     background-image: linear-gradient(rgba(5, 177, 177, 0.2), rgba(82, 51, 154, 0.2)), url('/img/header_img.jpg');
     background-repeat: no-repeat;
