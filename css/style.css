@@ -86,6 +86,10 @@ header {
     font-weight: bold;
 }
 
+.status-block {
+    position: relative;
+}
+
 .title-block {
     position: relative;
 }
@@ -101,6 +105,36 @@ header {
     font-family: "Baskerville", sans-serif;
     font-size: 41px;
     color: white;
+}
+
+.title-block_text-position {
+    margin-left: -58px;
+}
+@media (max-width: 700px) {
+    .title-block_text-position {
+        margin-left: 0;
+    }
+}
+
+.honor-block_text {
+    position: absolute;
+    line-height: 1;
+    bottom: 159px;
+    left: 111px;
+    font-family: "Baskerville", sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: var(--color1);
+}
+
+.honor-block_text-position {
+    margin-left: 18px;
+}
+
+.honor-block_img {
+    position: absolute;
+    bottom: 0px;
+    left: 129px;
 }
 
 .itd_play {
