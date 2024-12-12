@@ -42,7 +42,6 @@ function createLeadForm(formId, buttonId) {
         phone: leadPhone
       })
     });
-
     if (response.status !== 202) {
       console.error("Server error")
     }

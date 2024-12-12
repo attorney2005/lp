@@ -141,6 +141,35 @@ header {
     left: 129px;
 }
 
+.honor-mob {
+    padding: 0;
+}
+
+.honor-mob-block {
+    position: relative;
+}
+
+.honor-mob-block_text {
+    position: absolute;
+    line-height: 1;
+    bottom: 24px;
+    right: 83px;
+    font-family: "Baskerville", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--color1);
+}
+
+.honor-mob-block_text-position {
+    margin-left: 20px;
+}
+
+.honor-mob-block_img {
+    position: absolute;
+    bottom: 0px;
+    left: 58px;
+}
+
 .itd_play {
     background-color: var(--color1);
     width: 60px;
