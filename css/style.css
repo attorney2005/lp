@@ -7,6 +7,11 @@ section {
     padding: 100px 0;
 }
 
+
+section.honor-mob {
+    padding: 0;
+}
+
 footer, .carousel-btn, .btn_anim {
     background: var(--color1);
     background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
@@ -76,18 +81,18 @@ header {
     }
 }
 
-.gradient-mos-nagrada:after {
+.gradient-mob-nagrada:after {
     backdrop-filter: opacity(55.5);
     content: "";
     display: block;
-    width: 294px;
-    height: 276px;
+    width: 300px;
+    height: 93px;
     position: absolute;
-    top: -266px;
-    left: 44px;
+    bottom: 10px;
+    left: 50px;
     background: transparent linear-gradient(to left, var(--color1), var(--color2));
     opacity: 0.13;
-    /* border-radius: 50%; */
+     /*border-radius: 50%;*/
 }
 
 .nav_col {
@@ -180,7 +185,7 @@ header {
         font-family: "Baskerville", sans-serif;
         font-size: 20px;
         font-style: italic;
-        color: var(--color1);
+        color: white;
     }
 
     .honor-mob-block_text-position {
@@ -189,7 +194,7 @@ header {
 
     .honor-mob-block_img {
         position: absolute;
-        bottom: 0px;
+        bottom: 4px;
         left: 58px;
     }
 }
